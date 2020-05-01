@@ -1,12 +1,12 @@
-# ALPR in Unscontrained Scenarios
+# ALPR
 
 ## Introduction
 
-This repository contains the author's implementation of ECCV 2018 paper "License Plate Detection and Recognition in Unconstrained Scenarios".
+This project is based on S.M. Silva and C.R. Jung's implementation of ECCV 2018 paper "License Plate Detection and Recognition in Unconstrained Scenarios".
 
 * Paper webpage: http://sergiomsilva.com/pubs/alpr-unconstrained/
 
-If you use results produced by our code in any publication, please cite our paper:
+If you use results produced by our code in any publication, please cite the paper:
 
 ```
 @INPROCEEDINGS{silva2018a,
@@ -27,7 +27,7 @@ In order to easily run the code, you must have installed the Keras framework wit
 $ cd darknet && make
 ```
 
-**The current version was tested in an Ubuntu 16.04 machine, with Keras 2.2.4, TensorFlow 1.5.0, OpenCV 2.4.9, NumPy 1.14 and Python 2.7.**
+**The current version was tested in an Ubuntu 20.04 machine, with Keras 2.2.4, TensorFlow 1.5.0, OpenCV 4.2.0, NumPy 1.17 and Python 3.8.**
 
 ## Download Models
 
@@ -61,7 +61,3 @@ $ python train-detector.py --model models/eccv-model-scracth --name my-trained-m
 ```
 
 For fine-tunning, use your model with --model option.
-
-## A word on GPU and CPU
-
-We know that not everyone has an NVIDIA card available, and sometimes it is cumbersome to properly configure CUDA. Thus, we opted to set the Darknet makefile to use CPU as default instead of GPU to favor an easy execution for most people instead of a fast performance. Therefore, the vehicle detection and OCR will be pretty slow. If you want to accelerate them, please edit the Darknet makefile variables to use GPU.
