@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This project is based on S.M. Silva and C.R. Jung's implementation of ECCV 2018 paper "License Plate Detection and Recognition in Unconstrained Scenarios".
+This project is based on S.M. Silva and C.R. Jung's implementation of ECCV 2018 paper "License Plate Detection and Recognition in Unconstrained Scenarios". 
 
 * Paper webpage: http://sergiomsilva.com/pubs/alpr-unconstrained/
 
-The authors requested to cite the following paper if results produced by the code in are published in any publication:
+The original authors requested to cite the following paper if results produced by the code in are published in any publication:
 
 ```
 @INPROCEEDINGS{silva2018a,
@@ -18,6 +18,8 @@ The authors requested to cite the following paper if results produced by the cod
   doi={10.1007/978-3-030-01258-8_36}, 
   month={Sep},}
 ```
+
+I am further developing this for personal use and to run it realtime on a Jetson Nano to open mij gate when I arrive at my house :-). So after converting the code to run on recent Python versions I am aiming to use GPU accelleration of the Nano to speed things up. The idea is to send resulting number plates via MQTT or REST to my OpenHAB home automation system.
 
 ## Requirements
 
