@@ -6,7 +6,7 @@ This project is based on S.M. Silva and C.R. Jung's implementation of ECCV 2018 
 
 * Paper webpage: http://sergiomsilva.com/pubs/alpr-unconstrained/
 
-If you use results produced by our code in any publication, please cite the paper:
+The authors requested to cite the following paper if results produced by the code in are published in any publication:
 
 ```
 @INPROCEEDINGS{silva2018a,
